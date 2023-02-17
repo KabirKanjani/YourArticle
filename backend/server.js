@@ -2,7 +2,7 @@
 const mongoose=require('mongoose');
 
 require('dotenv').config();
-const ArticleRoutes=require('./routes/Articles.js')
+const ArticleRoutes=require('./routes/articles.js')
 const UserRoutes=require('./routes/user.js')
 //Express App
 const cors =require('cors');
