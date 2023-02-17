@@ -1,5 +1,5 @@
 const jwt=require('jsonwebtoken')
-const User_Details=require('../models/user_details');
+const User_Details=require('../models/user_details.js');
 
 const requireAuth=async (req,res,next)=>
 {    

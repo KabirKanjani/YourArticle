@@ -1,9 +1,9 @@
 const express=require('express');
 const Article_model = require('../models/article_model.js');
-const requireAuth=require('../middleware/requireAuth')
+const requireAuth=require('../middleware/requireAuth.js')
 
-const Article_controller=require("../controllers/article_controller")
-const User_controller=require("../controllers/user_controller")
+const Article_controller=require("../controllers/article_controller.js")
+const User_controller=require("../controllers/user_controller.js")
 const router=express.Router();
 router.get("/articles/categories",Article_controller.get_all_Categories)
 //Get all Articles

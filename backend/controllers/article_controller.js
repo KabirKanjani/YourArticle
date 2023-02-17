@@ -1,8 +1,8 @@
 
-const User=require("../models/user_details");
+const User=require("../models/user_details.js");
 const { builtinModules } = require("module");
-const Article_model=require("../models/Article_model");
-const Tag_model=require("../models/tags");
+const Article_model=require("../models/article_model.js");
+const Tag_model=require("../models/tags.js");
 const { ObjectId } = require('mongodb');
 const {mongoose, isObjectIdOrHexString, Mongoose}=require('mongoose');
 require('dotenv').config();

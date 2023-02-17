@@ -1,7 +1,7 @@
 const { builtinModules } = require("module");
 const jwt=require('jsonwebtoken');
 require('dotenv').config();
-const User=require("../models/user_details");
+const User=require("../models/user_details.js");
 
 const createToken=(_id)=>{
     console.log("Hello JWT")
