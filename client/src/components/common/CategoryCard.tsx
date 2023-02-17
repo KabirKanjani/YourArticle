@@ -1,0 +1,36 @@
+import React, { useState } from 'react'
+import {Place} from '@mui/icons-material';
+import {Link} from'@pankod/refine-react-router-v6'
+import {Typography,Box,Card,CardMedia,CardContent,Stack} from '@pankod/refine-mui';
+import {CategoryCardProps} from 'interfaces/category';
+const CategoryCard = ({id,Image,articleType}:CategoryCardProps) => {
+     return (
+    <Card component={Link} to={`/categories/show/${articleType}`}
+    sx={{maxWidth:'330px' ,padding:'10px' ,'&:hover':{
+      boxShadow:'0 22px 45px 2px rgba(176,176,176,0,1)'
+    },
+     cursor:'pointer',
+     textDecoration:'none',
+
+  }}
+  elevation={0}
+    >
+      <CardMedia
+      component="img"
+      width='100%'      
+      height={210}
+      image={Image ? Image:'https://res.cloudinary.com/dkvscghgu/image/upload/v1676635141/Return_of_Sports_pxhf4y.jpg'}
+      alt="Card Image"
+      sx={{borderRadius:'10px'}}
+      />
+      <CardContent sx={{display:'flex', flexDirection:'row',gap:'120px' ,paddingX:'5px', }}>
+        <Box px={1.5} py={0.5} borderRadius={1} bgcolor="#dadefa" height="fit-content" >
+          <Typography fontSize={12} fontWeight={600} color="#475be8">{articleType}</Typography>
+          </Box>
+      </CardContent>
+
+    </Card>
+  )
+}
+
+export default CategoryCard
