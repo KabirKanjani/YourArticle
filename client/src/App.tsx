@@ -58,7 +58,7 @@ axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
       const profileObj = credential ? parseJwt(credential) : null;
 
       if (profileObj) {
-        const response=await fetch("http://localhost:4000/api/user/signup",{
+        const response=await fetch("https://yourarticle.onrender.com/api/user/signup",{
           method:"POST",
           headers:{'Content-Type':'application/json'},
           body:JSON.stringify({
@@ -124,7 +124,7 @@ axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
       <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
       <RefineSnackbarProvider>
         <Refine
-          dataProvider={dataProvider("http://localhost:4000/api/article")}
+          dataProvider={dataProvider("https://yourarticle.onrender.com/api/article")}
           notificationProvider={notificationProvider}
           ReadyPage={ReadyPage}
           catchAll={<ErrorComponent />}
