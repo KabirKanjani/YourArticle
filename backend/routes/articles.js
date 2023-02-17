@@ -1,5 +1,5 @@
 const express=require('express');
-const Article_model = require('../models/Article_model');
+const Article_model = require('../models/article_model.js');
 const requireAuth=require('../middleware/requireAuth')
 
 const Article_controller=require("../controllers/Article_controller")
