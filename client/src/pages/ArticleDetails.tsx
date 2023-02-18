@@ -196,7 +196,7 @@ const Article_Details = () => {
                             flexWrap="wrap"
                             gap={2}
                         >
-                            <CustomButton
+                            {/* <CustomButton
                                 title={!isCurrentUser ? "Message" : "Edit"}
                                 backgroundColor="#475BE8"
                                 color="#FCFCFC"
@@ -211,7 +211,7 @@ const Article_Details = () => {
                                         );
                                     }
                                 }}
-                            />
+                            /> */}
                             <CustomButton
                                 title={!isCurrentUser ? "Call" : "Delete"}
                                 backgroundColor={
