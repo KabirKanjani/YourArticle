@@ -96,10 +96,6 @@ const AuthorCard = ({id,name,email,avatar,noOfArticles}:AuthorCardProp) => {
                         name="India"
                     />
                     <InfoBar
-                        icon={<Phone sx={{ color: "#808191" }} />}
-                        name="+502-3231-4141"
-                    />
-                    <InfoBar
                         icon={<Article sx={{ color: "#808191" }} />}
                         name={`${noOfArticles} Articles`}
                     />

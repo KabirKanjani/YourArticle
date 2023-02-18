@@ -77,62 +77,13 @@ const Profile = ({ type, name, avatar, email, Articles}: ProfileProps) => (
                             </Stack>
 
                             <Stack direction="column" gap="30px">
-                                <Stack gap="15px">
-                                    <Typography
-                                        fontSize={14}
-                                        fontWeight={500}
-                                        color="#808191"
-                                    >
-                                        Address
-                                    </Typography>
-                                    <Box
-                                        display="flex"
-                                        flexDirection="row"
-                                        alignItems="center"
-                                        gap="10px"
-                                    >
-                                        <Place sx={{ color: "#11142D" }} />
-                                        <Typography
-                                            fontSize={14}
-                                            color="#11142D"
-                                        >
-                                            4517 Washington Ave. Manchaster,
-                                            Kentucky 39495
-                                        </Typography>
-                                    </Box>
-                                </Stack>
-
                                 <Stack
                                     direction="row"
                                     flexWrap="wrap"
                                     gap="20px"
                                     pb={4}
                                 >
-                                    <Stack flex={1} gap="15px">
-                                        <Typography
-                                            fontSize={14}
-                                            fontWeight={500}
-                                            color="#808191"
-                                        >
-                                            Phone Number
-                                        </Typography>
-                                        <Box
-                                            display="flex"
-                                            flexDirection="row"
-                                            alignItems="center"
-                                            gap="10px"
-                                        >
-                                            <Phone sx={{ color: "#11142D" }} />
-                                            <Typography
-                                                fontSize={14}
-                                                color="#11142D"
-                                                noWrap
-                                            >
-                                                +0123 456 7890
-                                            </Typography>
-                                        </Box>
-                                    </Stack>
-
+                                
                                     <Stack flex={1} gap="15px">
                                         <Typography
                                             fontSize={14}
