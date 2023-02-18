@@ -29,8 +29,11 @@ const Categories = () => {
     if (isError) return <div>error...</div>;
     
   return (
-     
-    <Box mt="20px" sx={{display:'flex' , flexWrap:'wrap',gap:3}}>
+     <Box>
+      <Typography fontSize={25} mx={5} fontWeight={700} color="#11142D">
+            All Sports
+        </Typography>
+    <Box mt="20px" sx={{display:'flex' , flexWrap:'wrap',gap:3}}>        
     {AllCategories.map((article)=>(        
       <CategoryCard 
       id={article._id}
@@ -39,6 +42,7 @@ const Categories = () => {
       articleType={article.articleType}         
       />
     ))}
+    </Box>
     </Box>
   )
 }

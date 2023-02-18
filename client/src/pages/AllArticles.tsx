@@ -38,7 +38,7 @@ current,setCurrent,setPageSize,pageCount,sorter,setSorter,filters,setFilters,
 
 
           <Stack direction="row" justifyContent="space-between" alignItems="center">
-      <Typography fontSize={25} fontWeight={700} color="#11142d">
+      <Typography fontSize={25} fontWeight={700} mx={5} color="#11142d">
       {!Articles.length?'No Articles':'All Articles'}
       </Typography>
       <CustomButton title="Add Article" handleClick={()=>navigate('/articles/create')} backgroundColor="#475be8" color="#fcfcfc" icon={<Add/>}></CustomButton>
